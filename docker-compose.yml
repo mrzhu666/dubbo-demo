@@ -1,0 +1,10 @@
+version: "3.0"
+
+services:
+  nacos-quick:
+    image: nacos/nacos-server:v2.3.1-slim
+    environment:
+      MODE: standalone # 单节点模式
+      TZ: Asia/Shanghai # 控制时区
+    ports:
+      - "8849:8848"
